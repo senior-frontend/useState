@@ -1,19 +1,16 @@
 import { Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import UseLayoutEffectExample from './UseLayoutEffectExample/UseLayoutEffectExample';
-import UseEffectExample from './UseEffectExample/UseEffectExample';
+import UseStateExample from './useStateExample/UseStateExample';
 
 function App() {
   return (
     <div className="App">
       <div className="links">
-        <Link to="useEffect">useEffect</Link>
-        <Link to="useLayoutEffectExample">useLayoutEffectExample</Link>
+        <Link to="useState">useState</Link>
       </div>
       <div className="app__content">
         <Routes>
-          <Route path="/useEffect" element={<UseEffectExample />} />
-          <Route path="/useLayoutEffectExample" element={<UseLayoutEffectExample />} />
+          <Route path="/useState" element={<UseStateExample />} />
         </Routes>
       </div>
     </div>
